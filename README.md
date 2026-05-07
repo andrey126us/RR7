@@ -146,7 +146,7 @@ ArrayAdapter — это адаптер, который связывает мас
     }
 });
 ```
-4. Какие типы полей ввода (inputType) вы знаете? Перечислите не менее 5.
+### 4. Какие типы полей ввода (inputType) вы знаете? Перечислите не менее 5.
 text — обычный текст.
 
 textEmailAddress — email.
@@ -161,13 +161,13 @@ numberDecimal — число с плавающей точкой.
 
 textMultiLine — многострочный текст.
 
-5. Что такое регулярное выражение? Приведите пример проверки номера телефона.
+### 5. Что такое регулярное выражение? Приведите пример проверки номера телефона.
 Регулярное выражение (regex) — это шаблон для поиска и проверки строк.
 Пример для телефона в формате +7XXXXXXXXXX:
 ^\\+7\\d{10}$
 В Java: phone.matches("^\\+7\\d{10}$").
 
-6. Как открыть DatePickerDialog? Кратко опишите шаги.
+### 6. Как открыть DatePickerDialog? Кратко опишите шаги.
 Получить экземпляр Calendar с текущей датой.
 
 Создать DatePickerDialog, передав контекст, слушатель и год/месяц/день.
@@ -183,7 +183,7 @@ new DatePickerDialog(this, (view, year, month, day) -> {
     editText.setText(date);
 }, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH), cal.get(Calendar.DAY_OF_MONTH)).show();
 ```
-7. Как отобразить выпадающий список (Spinner) с данными из ресурсов? Напишите код.
+### 7. Как отобразить выпадающий список (Spinner) с данными из ресурсов? Напишите код.
 ```
 Spinner spinner = findViewById(R.id.spinner);
 ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -191,7 +191,7 @@ ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
 adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 spinner.setAdapter(adapter);
 ```
-8. В чем разница между CheckBox и RadioGroup? Когда какой элемент использовать?
+### 8. В чем разница между CheckBox и RadioGroup? Когда какой элемент использовать?
 CheckBox — позволяет выбрать несколько независимых вариантов.
 
 RadioGroup (группа радиокнопок) — позволяет выбрать только один вариант из нескольких. Используется, когда варианты взаимно исключают друг друга.
