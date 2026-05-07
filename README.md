@@ -138,13 +138,14 @@ ArrayAdapter — это адаптер, который связывает мас
 
 ### 3. Как обработать нажатие на элемент ListView? Приведите фрагмент кода.
 
-''' listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+```listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         String selected = parent.getItemAtPosition(position).toString();
         Toast.makeText(MainActivity.this, selected, Toast.LENGTH_SHORT).show();
     }
-});'''
+});
+```
 4. Какие типы полей ввода (inputType) вы знаете? Перечислите не менее 5.
 text — обычный текст.
 
@@ -183,12 +184,13 @@ new DatePickerDialog(this, (view, year, month, day) -> {
 }, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH), cal.get(Calendar.DAY_OF_MONTH)).show();
 ```
 7. Как отобразить выпадающий список (Spinner) с данными из ресурсов? Напишите код.
-java
+```
 Spinner spinner = findViewById(R.id.spinner);
 ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
         R.array.items_array, android.R.layout.simple_spinner_item);
 adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 spinner.setAdapter(adapter);
+```
 8. В чем разница между CheckBox и RadioGroup? Когда какой элемент использовать?
 CheckBox — позволяет выбрать несколько независимых вариантов.
 
