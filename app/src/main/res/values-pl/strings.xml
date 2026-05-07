@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">LocalizationAndFormsLab</string>
+    <string name="list_title">Moja lista</string>
+    <!-- Rejestracja -->
+    <string name="fio_hint">Imię i nazwisko</string>
+    <string name="login_hint">Login</string>
+    <string name="email_hint">Email</string>
+    <string name="phone_hint">Telefon</string>
+    <string name="password_hint">Hasło</string>
+    <string name="confirm_password_hint">Powtórz hasło</string>
+    <string name="birthdate_hint">Data urodzenia</string>
+    <string name="choose_date">Wybierz datę</string>
+    <string name="agree_text">Zgoda na przetwarzanie danych osobowych</string>
+    <string name="register_button">Zarejestruj się</string>
+    <string-array name="furniture_array">
+        <item>Stół</item>
+        <item>Krzesło</item>
+        <item>Łóżko</item>
+        <item>Szafa</item>
+        <item>Kanapa</item>
+        <item>Szafka</item>
+    </string-array>
+</resources>

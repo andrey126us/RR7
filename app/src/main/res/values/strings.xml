@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">LocalizationAndFormsLab</string>
+    <string name="list_title">Мой список</string>
+    <string name="fio_hint">ФИО</string>
+    <string name="login_hint">Логин</string>
+    <string name="email_hint">Email</string>
+    <string name="phone_hint">Телефон</string>
+    <string name="password_hint">Пароль</string>
+    <string name="confirm_password_hint">Повтор пароля</string>
+    <string name="birthdate_hint">Дата рождения</string>
+    <string name="choose_date">Выбрать дату</string>
+    <string name="agree_text">Согласие на обработку персональных данных</string>
+    <string name="register_button">Зарегистрироваться</string>
+    <string-array name="furniture_array">
+        <item>Стол</item>
+        <item>Стул</item>
+        <item>Кровать</item>
+        <item>Шкаф</item>
+        <item>Диван</item>
+        <item>Тумба</item>
+    </string-array>
+</resources>
