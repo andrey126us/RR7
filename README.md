@@ -123,6 +123,12 @@ Spinner	выбор из списка мебели (обязательный вы
 
 CheckBox	согласие на обработку данных (обязательно)
 
+
+### 3 Реализация выбора даты рождения через диалоговое окно DatePickerDialog
+![Форма регистрации](media/6.png)
+
+**Рисунок 6** — Выбор даты через диалоговое окно
+
 # Контрольные вопросы
 ### 1. Как создать локализованные строки для другого языка? Где хранятся такие ресурсы?
 Нужно создать папку-квалификатор, например res/values-ru/ для русского языка, и внутри неё файл strings.xml с теми же ключами, но переведёнными значениями. Для польского — values-pl/. Система автоматически подгружает ресурсы в зависимости от языка устройства.
@@ -169,12 +175,12 @@ textMultiLine — многострочный текст.
 
 Пример:
 
-java
+```
 Calendar cal = Calendar.getInstance();
 new DatePickerDialog(this, (view, year, month, day) -> {
     String date = day + "." + (month+1) + "." + year;
     editText.setText(date);
-}, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH), cal.get(Calendar.DAY_OF_MONTH)).show();
+}, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH), cal.get(Calendar.DAY_OF_MONTH)).show();``` 
 7. Как отобразить выпадающий список (Spinner) с данными из ресурсов? Напишите код.
 java
 Spinner spinner = findViewById(R.id.spinner);
@@ -190,8 +196,3 @@ RadioGroup (группа радиокнопок) — позволяет выбр
 
 
 При ошибке валидации поле подсвечивается setError(), в Logcat выводится сообщение с тегом Registration.
-
-### 3 Реализация выбора даты рождения через диалоговое окно DatePickerDialog
-![Форма регистрации](media/6.png)
-
-**Рисунок 6** — Выбор даты через диалоговое окно
